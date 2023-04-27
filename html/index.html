@@ -1,0 +1,74 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TASK 3</title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="headerstarts">
+                <header>
+                    <img src="../images/logo1.png" alt="logo"> 
+                    <h1>DONVICO COLLECTIONS</h1>
+                    <nav>
+                        <ul>
+                            <li><a href="./index.html">HOME</a></li>
+                            <li><a href="./about.html">ABOUT US</a></li>
+                            <li><a href="./contact.html">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            </div>
+            <section>
+                <article>
+                    <h2>Trending Now: The Latest Fashion Trends</h2>
+                    <h3>Oversized Blazers:</h3>
+                    <p>Oversized blazers are a must-have item this season. They're versatile <br> and can be dressed up or down depending on the occasion. In our "Trending Now" section, we show  <br>
+                    you different ways to style an oversized blazer, from  <br> pairing it with jeans to dressing it up with a skirt..
+                    </p>
+                    <h3>Statement Earrings:</h3>
+                    <p>If you want to add some sparkle to your outfit, <br> statement earrings are the way to go. From oversized <br> hoops to colorful tassels, statement  earrings 
+                        <br> are the perfect accessory to dress up any outfit. In our <br> <cite>"Trending Now" </cite>section, we show you how to wear <br> these earrings without overwhelming your look.<br><br>
+                    </p>
+                    <em>SHOP WITH US TODAY</em>
+                </article>
+                <hr>
+            </section>
+            <blockquote>
+                <p>"The best and most beautiful things in the world cannot be seen or even touched <br> — they must be felt with the heart. <br> <cite> -Helen Keller</cite></p>
+            </blockquote>
+            <!-- <p>Here is some code: <code>&lt;p&gt;This is a paragraph&lt;/p&gt;</code></p> -->
+            <pre>
+                <code>
+                    name = input("What is your name? ")
+
+                    from flask import Flask, render_template, request
+                    app = Flask(__name__)
+
+                    @app.route('/')
+                    def form():
+                        return render_template('form.html')
+
+                    @app.route('/submit', methods=['POST'])
+                    def submit():
+                        name = request.form['name']
+                        email = request.form['email']
+                        message = request.form['message']
+                        # do something with the form data
+                        return 'Thanks for submitting the form, {}!'.format(name)
+
+                    if __name__ == '__main__':
+                        app.run(debug=True)
+
+                </code>
+            </pre>
+            <hr>
+            <footer>
+                <p>Winners Chukwuebuka <br> | Agu-Awka, Anambra State</p>
+            </footer>
+        </div>
+
+    </body>
+</html>
